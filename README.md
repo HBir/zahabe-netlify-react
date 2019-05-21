@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/775eb145-5868-4bd7-906c-447ad7c0767c/deploy-status)](https://app.netlify.com/sites/wonderful-hypatia-bd52a5/deploys)
+
 This project is based on [Create React App v2](https://github.com/facebookincubator/create-react-app) and [netlify-lambda v1](https://github.com/netlify/netlify-lambda). (For more information about Create react App, check their full [documentation](https://github.com/facebookincubator/create-react-app#create-react-app).)
 
 The main addition is a new folder: `src/lambda`. Each JavaScript file in there will automatically be prepared for Lambda function deployment.
@@ -8,7 +10,7 @@ As an example, we've included a small `src/lambda/hello.js` function, which will
 
 ## Video
 
-Learn how to set this up yourself (and why everything is the way it is) from scratch in a video: https://www.youtube.com/watch?v=3ldSM98nCHI 
+Learn how to set this up yourself (and why everything is the way it is) from scratch in a video: https://www.youtube.com/watch?v=3ldSM98nCHI
 
 ## Babel/webpack compilation
 
