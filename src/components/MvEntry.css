@@ -1,0 +1,43 @@
+.mvEntry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mvEntry > * {
+  flex: 1 100%;
+}
+
+.mvId {
+  color: gray;
+  flex: 2 50px;
+  text-align: right;
+}
+
+.mvText {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  background-color: #eee;
+
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #333;
+}
+
+
+@media screen and (max-width: 500px) {
+  .mvEntry {
+    flex-wrap: wrap;
+  }
+  .mvText {
+    width: 100%;
+    margin: 4px 0 10px 0;
+  }
+
+  .mvId {
+    flex: 2 50px;
+    text-align: left;
+    padding: 0 10px;
+  }
+}

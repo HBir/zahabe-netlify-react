@@ -1,0 +1,58 @@
+.newEntryButton {
+  /* background-color: lightgray;
+  border-radius: 2px;
+  border: none;
+  margin: 0 10px 0 10px;
+  padding: 5px;
+  font: inherit;
+  font-size: 0.8em; */
+  font: inherit;
+
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 80px;
+  background-color: #1b1b1b;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: 31px;
+  line-height: 32px;
+  max-height: 150px;
+  cursor: pointer;
+}
+
+.newEntryInput {
+  font: inherit;
+  /* width: 90%;
+  background-color: darkgray; */
+
+  display: block;
+  border: none;
+  padding: 0 0 0 5px;
+  margin: 0;
+  width: calc(100% - 85px);
+  background-color: #1b1b1b;
+  color: white;
+  text-decoration: none;
+  float: left;
+  resize: none;
+  overflow: hidden;
+  min-height: 30px;
+  max-height: 150px;
+  height: 31px;
+  font-size: 27px
+
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}

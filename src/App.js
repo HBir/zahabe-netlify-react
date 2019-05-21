@@ -1,51 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NewEntry from "./components/NewEntry";
+import MvList from "./components/MvList";
 
-class LambdaDemo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { loading: false, msg: null };
-  }
+const mvs = [
+  { id: 4987, text: "Minns vi den gången Zahabe tyckte att pjäsen var en besvikelse, då alla skådespelare bestod av små figurer, men konstaterade att det var dock teater?" },
+  { id: 1, text: "Minns vi den gången Zahabe saknade kung Bhumibol?" },
+];
 
-  handleClick = api => e => {
-    e.preventDefault();
-
-    this.setState({ loading: true });
-    fetch('/.netlify/functions/' + api)
-      .then(response => response.json())
-      .then(json => this.setState({ loading: false, msg: json.msg }));
-  };
-
-  render() {
-    const { loading, msg } = this.state;
-
-    return (
-      <p>
-        <button onClick={this.handleClick('hello')}>
-          {loading ? 'Loading...' : 'Call Lambda'}
-        </button>
-        <button onClick={this.handleClick('async-chuck-norris')}>
-          {loading ? 'Loading...' : 'Call Async Lambda'}
-        </button>
-        <br />
-        <span>{msg}</span>
-      </p>
-    );
-  }
-}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            This is Zahabe.
-          </p>
-          <LambdaDemo />
+            Minns vi den gången Zahabe...
+
         </header>
+        <NewEntry />
+
+        <MvList mvs={mvs} />
+
       </div>
     );
   }
