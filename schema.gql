@@ -1,0 +1,11 @@
+type Mv {
+   id: Int!
+   text: String!
+   story: String
+   author: String
+}
+type Query {
+   allMvs: [Mv!]
+   mv(id: Int!): Mv
+   mvByAuthor(author: String!): [Mv!]
+}
