@@ -15,12 +15,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
             Minns vi den gången Zahabe...
-
         </header>
         <NewEntry />
-
         <MvList mvs={mvs} />
-
       </div>
     );
   }

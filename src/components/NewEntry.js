@@ -27,7 +27,7 @@ class NewEntry extends Component {
           {loading ? 'Loading...' : 'Call Lambda'}
         </button> */}
         <button className="newEntryButton" onClick={this.handleClick('async-chuck-norris')}>
-          {loading ? 'Loading...' : '>'}
+          {loading ? 'Posting...' : '>'}
         </button>
         <br />
 
