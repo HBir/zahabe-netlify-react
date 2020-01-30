@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-.newEntryInput {
+#newEntryInput {
   font: inherit;
   /* width: 90%;
   background-color: darkgray; */

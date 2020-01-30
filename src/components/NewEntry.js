@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import Loader from './Loader'
 import "./NewEntry.css";
 
 class NewEntry extends Component {
   constructor(props) {
     super(props);
-    this.state = { loading: false, msg: null };
+    this.state = { loading: false };
   }
 
   handleClick = api => e => {
@@ -21,17 +22,14 @@ class NewEntry extends Component {
 
     return (
       <div>
-        <textarea className="newEntryInput"></textarea>
+        <textarea id="newEntryInput"></textarea>
 
-        {/* <button className="newEntryButton" onClick={this.handleClick('hello')}>
-          {loading ? 'Loading...' : 'Call Lambda'}
-        </button> */}
-        <button className="newEntryButton" onClick={this.handleClick('async-chuck-norris')}>
+
+        <button className="newEntryButton" onClick={this.handleClick()}>
           {loading ? 'Posting...' : '>'}
         </button>
         <br />
-
-        <span>{msg}</span>
+        {this.state.loading ? <Loader /> : null}
 
       </div>
     );
@@ -39,13 +37,3 @@ class NewEntry extends Component {
 }
 
 export default NewEntry;
-/*
-CreateIndex(
-  {
-    name: "mvs_by_id",
-    source: Class("mvs"),
-    active: true,
-    terms: [{ field: ["data", "id"] }]
-  })
-
-  */
